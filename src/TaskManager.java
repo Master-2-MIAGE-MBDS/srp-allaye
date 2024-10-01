@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class TaskManager {
     private List<Task> tasks;
 
@@ -18,21 +20,8 @@ public class TaskManager {
         }
     }
 
-    public void printCompletedTasks() {
-        System.out.println("Tâches terminées :");
-        for (Task task : tasks) {
-            if (task.isCompleted()) {
-                System.out.println(task);
-            }
-        }
-    }
-
-    public void printPendingTasks() {
-        System.out.println("Tâches non terminées :");
-        for (Task task : tasks) {
-            if (!task.isCompleted()) {
-                System.out.println(task);
-            }
-        }
+    // Getter pour la liste des tâches
+    public List<Task> getTasks() {
+        return tasks;
     }
 }

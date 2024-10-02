@@ -2,7 +2,6 @@ public class ReportGenerator {
 
     private TaskManager taskManager;
 
-    // Le ReportGenerator dépend du TaskManager pour obtenir la liste des tâches
     public ReportGenerator(TaskManager taskManager) {
         this.taskManager = taskManager;
     }

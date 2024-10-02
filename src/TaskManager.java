@@ -20,7 +20,6 @@ public class TaskManager {
         }
     }
 
-    // Getter pour la liste des tâches
     public List<Task> getTasks() {
         return tasks;
     }
